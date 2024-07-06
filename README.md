@@ -10,6 +10,6 @@ a multi-threaded Java TCP game , where a player connect to the server, and play 
 ## Technologies used
 - Java
 - SQLite
-- BCRYPT
+- Bcrypt
 
 
