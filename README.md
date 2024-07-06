@@ -1,6 +1,6 @@
 # server-client-game
 ## overview 
-a multi-threaded Java TCP game , where a player connect to the server, and play 5 multi-choice questions using command line argument. the game requeirs two playes to start.
+a multi-threaded Java TCP game, where a player connects to the server, and plays 5 multi-choice questions using a command line argument. the game requires two players to start.
 
 ## features
 - Multi-threaded server
