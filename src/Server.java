@@ -18,8 +18,6 @@ public class Server {
                 System.out.println("Accepted FROM: " + nextPlayer.getInetAddress() + " PORT: " + nextPlayer.getPort());
                 Entry serve = new Entry(nextPlayer);
                 serve.start();
-
-
             }
         } catch (BindException be) {
             System.out.println("Can't bind to port:" + SERVICE_PORT);
@@ -31,6 +29,7 @@ public class Server {
     public static void startNewGame(Socket player , String userNAme) {
         connectedPlayers.push(player);
         users.push(userNAme);
+        if(player.isClosed()) connectedPlayers.pop();
 
         while (true) {
             if(connectedPlayers.size() == 2) {
